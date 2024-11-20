@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+}
+.Pricing_hero_section_1{
+    background-image: url(src/assets/Pricing1.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Pricing_text_container1{
+    font-size: 85px;
+    color: rgb(255, 255, 255);
+    max-width: 1000px;
+    padding-top: 110px;
+    margin-left: 35px;
+}
+.Pricing_downparth1{
+    margin-left: 620px;  
+}
+.Pricing_par1{
+    color: rgb(155, 255, 223);
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.Pricing_hero_section_2{
+    position: -webkit-sticky;
+    background-image: url(src/assets/Herosection2.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Pricing_hero_section_3{
+    position: -webkit-sticky;
+    background-image: url(src/assets/Herosection3.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Pricing_hero_section_4{
+    background-image: url(src/assets/Herosection4.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Pricing_hero_section_5{
+    background-image: url(src/assets/Herosection5.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Pricing_hero_section_6{
+    background-image: url(src/assets/Herosection6.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Pricing_hero_section_7{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.Pricing_herosection2-6_img{
+    padding-top: 2%;
+    width: 55%;
+    margin-left: 20%;
+}
+.Pricing_herosection2-6_head{
+    padding-top: 3%;
+    margin-left: 20%;
+    font-size: 40px;
+    color: rgb(108, 56, 67);
+}
+.Pricing_herosection_video{
+    width: 100%;
+    height: 100%;
+}
+
+.Pricing_main-content-5-centre{
+    padding: 80px 85px;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 678%;
+    left: 38vw;
+    text-align: center;
+    
+}
+
+.Pricing_main-content-5-centre button{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.Pricing_main-content-5-centre img{
+    width: 77px;
+    padding-bottom: 10px;
+}
+.Pricing_main-content-5-centre h5{
+    cursor: pointer;
+}
