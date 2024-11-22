@@ -1,0 +1,34 @@
+<%- include("header") %>
+
+<div style="border: 2px red dotted; height: 600px; width: 1000px;">
+    <h1 class="bg-primary text-dark">User List</h1>
+    <table class="table table-striped" align="center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Birthdate</th>
+                <th>Phone</th>
+                <th>User Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let user of userData) { %>
+                <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.gender %></td>
+                    <td><%= user.birthdate.getDate() %>-<%= user.birthdate.getMonth() + 1 %>-<%= user.birthdate.getFullYear() %></td>
+                    <td><%= user.phone %></td>
+
+                    <td>
+                        <a href="/edituser?userId=<%= user._id %>">Edit</a> | 
+                        <a href="/deleteuser?userId=<%= user._id %>">Delete</a>
+                    </td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
