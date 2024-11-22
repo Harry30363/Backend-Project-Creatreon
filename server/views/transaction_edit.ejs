@@ -1,0 +1,27 @@
+<%- include("header") %>
+
+<div style="border: 2px red dotted; height: 600px; width: 1000px; padding: 20px;">
+    <h1 class="bg-primary text-light text-center">Edit Transaction</h1>
+    <form action="/EdittransactionSubmit" method="post">
+        <table align="center" class="table table-bordered">
+            <tr>
+                <td>carname</td>
+                <td><input type="text" name="carname" value="<%= transaction.carname %>" required /></td>
+            </tr>
+            <tr>
+                <td>price</td>
+                <td><input type="number" name="price" value="<%= transaction.price %>" required /></td>
+            </tr>
+            <tr>
+                <td>paymentmethod</td>
+                <td><input type="text" name="paymentmethod" value="<%= transaction.paymentmethod %>" required /></td>
+            </tr>
+           
+            
+            <input type="hidden" name="transactionId" value="<%= transaction._id %>" />
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Update" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
