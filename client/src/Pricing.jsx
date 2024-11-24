@@ -43,7 +43,7 @@ const Pricing = () => {
                 </div>
             </section>
             <Footer></Footer>
-        </div>
+        </div>//div ended
     );
 };
 
