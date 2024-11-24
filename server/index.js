@@ -23,6 +23,8 @@ app.get('/', function(req,res){
 app.get('/adduser', function(req,res){
 	res.render("user_add");
 });
+
+
 app.post("/adduserSubmit", async function(req, res) {
     const usersCollection = db.collection("user");
 
