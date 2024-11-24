@@ -12,17 +12,7 @@ app.use(expressSession({secret: "node_mongo123!@#", resave:true, saveUninitializ
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 
-app.get('/', function(req,res){
-	let msg = "";
-	if(req.session.msg != undefined && req.session.msg != "")
-		msg = req.session.msg;
-	res.render("home",{msg:msg});
-});
 
-
-app.get('/adduser', function(req,res){
-	res.render("user_add");
-});
 app.post("/adduserSubmit", async function(req, res) {
     const usersCollection = db.collection("user");
 
