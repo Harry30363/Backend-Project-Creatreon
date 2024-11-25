@@ -1,0 +1,319 @@
+.Dashboard_dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .Dashboard_sidebar {
+    width: 220px;
+    background: linear-gradient(180deg, #4c4d5e, #1f1f2e);
+    color: white;
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Dashboard_sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Dashboard_sidebar li {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .Dashboard_sidebar li:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .Dashboard_content {
+    flex-grow: 1;
+    background: #f8f9fd;
+    padding: 30px;
+  }
+  
+  .Dashboard_header {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Dashboard_profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Dashboard_profile-pic {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .Dashboard_profile-pic::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    top: -5px;
+    left: -5px;
+  }
+  
+  .Dashboard_profile-info h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  .Dashboard_profile-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .Dashboard_profile-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .Dashboard_create-button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .Dashboard_create-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .Dashboard_upload-list {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Dashboard_upload-list h3 {
+    margin: 0 0 20px;
+    font-size: 18px;
+  }
+  
+  .Dashboard_upload-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Dashboard_upload-list li {
+    background: #eef2f7;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Dashboard_upload-list li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .Dashboard_upload-list li a:hover {
+    text-decoration: underline;
+  }
+  
+  .Dashboard_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Dashboard_modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .Dashboard_modal-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .Dashboard_modal-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content ```css
+  : space-between;
+  }
+  
+  .Dashboard_modal-content li {
+    background: #eef2f7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .Dashboard_modal-content li:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  .Dashboard_upload input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .Dashboard_submit-button {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .Dashboard_submit-button:hover {
+    transform: scale(1.05);
+  }
+  
+  .Dashboard_close-button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .Dashboard_close-button:hover {
+    background: #b21f2d;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .Dashboard_sidebar {
+      width: 180px; /* Reduce sidebar width */
+    }
+  
+    .Dashboard_content {
+      padding: 20px; /* Reduce padding */
+    }
+  
+    .Dashboard_header {
+      padding: 15px; /* Reduce header padding */
+    }
+  
+    .Dashboard_profile-info h2 {
+      font-size: 20px; /* Adjust font size */
+    }
+  
+    .Dashboard_create-button {
+      font-size: 12px; /* Adjust button font size */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .Dashboard_sidebar {
+      width: 150px; /* Further reduce sidebar width */
+    }
+  
+    .Dashboard_content {
+      padding: 15px; /* Further reduce padding */
+    }
+  
+    .Dashboard_header {
+      padding: 10px; /* Further reduce header padding */
+    }
+  
+    .Dashboard_profile-info h2 {
+      font-size: 18px; /* Further adjust font size */
+    }
+  
+    .Dashboard_create-button {
+      font-size: 11px; /* Further adjust button font size */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Dashboard_dashboard {
+      flex-direction: column; /* Stack sidebar and content */
+      height: auto; /* Allow height to adjust */
+    }
+  
+    .Dashboard_sidebar {
+      width: 100%; /* Full width sidebar */
+      box-shadow: none; /* Remove shadow */
+    }
+  
+    .Dashboard_content {
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .Dashboard_header {
+      flex-direction: column; /* Stack header items */
+      align-items: flex-start; /* Align items to start */
+    }
+  
+    .Dashboard_profile-info h2 {
+      font-size: 16px; /* Further adjust font size */
+    }
+  
+    .Dashboard_create-button {
+      width: 100%; /* Full width button */
+      font-size: 10px; /* Further adjust button font size */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Dashboard_sidebar {
+      display: none; /* Hide sidebar on very small screens */
+    }
+  
+    .Dashboard_content {
+      padding: 5px; /* Minimal padding */
+    }
+  
+    .Dashboard_header {
+      padding: 5px; /* Minimal header padding */
+    }
+  
+    .Dashboard_profile-info h2 {
+      font-size: 14px; /* Smallest font size */
+    }
+  
+    .Dashboard_create-button {
+      font-size: 9px; /* Smallest button font size */
+    }
+  }
