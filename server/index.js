@@ -41,10 +41,6 @@ app.use('/uploads', express.static('uploads'));
 app.use('/api/auth', authRoutes);
 app.use('/api', uploadRoutes);
 
-// **Error Handling**
-app.use((err, req, res, next) => {
-    res.status(err.status || 500).json({ error: err.message });
-});
 
 // **Home Route**
 app.get('/', (req, res) => {
@@ -134,3 +130,4 @@ app.get('/uploads', (req, res) => res.status(200).json({ uploads }));
 app.listen(8080, () => {
     console.log('Server running at http://localhost:8080/');
 });
+
