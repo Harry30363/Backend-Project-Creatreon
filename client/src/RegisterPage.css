@@ -1,0 +1,59 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/src/assets/getstarted page.webp');
+    background-size:73% ; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+    
+  .register-box {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+    
+  .register-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+    
+  .register-box input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+    
+  .register-box .register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+    
+  .register-box .register-button:hover {
+    background-color: #0056b3;
+  }
+    
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+    
+  .success {
+    color: green;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
