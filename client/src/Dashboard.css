@@ -1,319 +1,827 @@
+/* .Dashboard_dashboard {
+  display: flex;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Dashboard_sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #4c4d5e, #1f1f2e);
+  color: white;
+  padding: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Dashboard_sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Dashboard_sidebar li {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Dashboard_sidebar li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.Dashboard_content {
+  flex-grow: 1;
+  background: #f8f9fd;
+  padding: 30px;
+}
+
+.Dashboard_header {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_profile {
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard_profile-pic {
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.Dashboard_profile-pic::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+}
+
+.Dashboard_profile-info h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.Dashboard_profile-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Dashboard_profile-info a:hover {
+  text-decoration: underline;
+}
+
+.Dashboard_create-button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Dashboard_create-button:hover {
+  transform: scale(1.05);
+}
+
+.Dashboard_upload-list {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_upload-list h3 {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.Dashboard_upload-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Dashboard_upload-list li {
+  background: #eef2f7;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard_upload-list li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.Dashboard_upload-list li a:hover {
+  text-decoration: underline;
+}
+
+.Dashboard_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dashboard_modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Dashboard_modal-content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Dashboard_modal-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Dashboard_modal-content li {
+  background: #eef2f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Dashboard_modal-content li:hover {
+  background: #007bff;
+  color: white;
+}
+
+.Dashboard_upload input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.Dashboard_submit-button {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Dashboard_submit-button:hover {
+  transform: scale(1.05);
+}
+
+.Dashboard_close-button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Dashboard_close-button:hover {
+  background: #b21f2d;
+} */
+
+/* 
 .Dashboard_dashboard {
-    display: flex;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .Dashboard_sidebar {
-    width: 220px;
-    background: linear-gradient(180deg, #4c4d5e, #1f1f2e);
-    color: white;
-    padding: 20px;
-    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .Dashboard_sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .Dashboard_sidebar li {
-    margin: 20px 0;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .Dashboard_sidebar li:hover {
-    background: rgba(255, 255, 255, 0.2);
-  }
-  
-  .Dashboard_content {
-    flex-grow: 1;
-    background: #f8f9fd;
-    padding: 30px;
-  }
-  
-  .Dashboard_header {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .Dashboard_profile {
-    display: flex;
-    align-items: center;
-  }
-  
-  .Dashboard_profile-pic {
-    width: 60px;
-    height: 60px;
-    background: #ccc;
-    border-radius: 50%;
-    margin-right: 20px;
-    position: relative;
-  }
-  
-  .Dashboard_profile-pic::before {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    border: 2px solid #007bff;
-    border-radius: 50%;
-    top: -5px;
-    left: -5px;
-  }
-  
-  .Dashboard_profile-info h2 {
-    margin: 0;
-    font-size: 22px;
-    color: #333;
-  }
-  
-  .Dashboard_profile-info a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .Dashboard_profile-info a:hover {
-    text-decoration: underline;
-  }
-  
-  .Dashboard_create-button {
-    padding: 12px 25px;
-    background: linear-gradient(90deg, #007bff, #0056b3);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .Dashboard_create-button:hover {
-    transform: scale(1.05);
-  }
-  
-  .Dashboard_upload-list {
-    margin-top: 30px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .Dashboard_upload-list h3 {
-    margin: 0 0 20px;
-    font-size: 18px;
-  }
-  
-  .Dashboard_upload-list ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .Dashboard_upload-list li {
-    background: #eef2f7;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .Dashboard_upload-list li a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  
-  .Dashboard_upload-list li a:hover {
-    text-decoration: underline;
-  }
-  
-  .Dashboard_modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .Dashboard_modal-content {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 400px;
-    text-align: center;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .Dashboard_modal-content h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .Dashboard_modal-content ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content ```css
-  : space-between;
-  }
-  
-  .Dashboard_modal-content li {
-    background: #eef2f7;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .Dashboard_modal-content li:hover {
-    background: #007bff;
-    color: white;
-  }
-  
-  .Dashboard_upload input {
-    width: 100%;
-    padding: 10px;
-    margin: 15px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-  }
-  
-  .Dashboard_submit-button {
-    padding: 12px 20px;
-    background: linear-gradient(90deg, #28a745, #218838);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .Dashboard_submit-button:hover {
-    transform: scale(1.05);
-  }
-  
-  .Dashboard_close-button {
-    margin-top: 15px;
-    padding: 10px;
-    background: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .Dashboard_close-button:hover {
-    background: #b21f2d;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 1200px) {
-    .Dashboard_sidebar {
-      width: 180px; /* Reduce sidebar width */
-    }
-  
-    .Dashboard_content {
-      padding: 20px; /* Reduce padding */
-    }
-  
-    .Dashboard_header {
-      padding: 15px; /* Reduce header padding */
-    }
-  
-    .Dashboard_profile-info h2 {
-      font-size: 20px; /* Adjust font size */
-    }
-  
-    .Dashboard_create-button {
-      font-size: 12px; /* Adjust button font size */
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .Dashboard_sidebar {
-      width: 150px; /* Further reduce sidebar width */
-    }
-  
-    .Dashboard_content {
-      padding: 15px; /* Further reduce padding */
-    }
-  
-    .Dashboard_header {
-      padding: 10px; /* Further reduce header padding */
-    }
-  
-    .Dashboard_profile-info h2 {
-      font-size: 18px; /* Further adjust font size */
-    }
-  
-    .Dashboard_create-button {
-      font-size: 11px; /* Further adjust button font size */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .Dashboard_dashboard {
-      flex-direction: column; /* Stack sidebar and content */
-      height: auto; /* Allow height to adjust */
-    }
-  
-    .Dashboard_sidebar {
-      width: 100%; /* Full width sidebar */
-      box-shadow: none; /* Remove shadow */
-    }
-  
-    .Dashboard_content {
-      padding: 10px; /* Reduce padding */
-    }
-  
-    .Dashboard_header {
-      flex-direction: column; /* Stack header items */
-      align-items: flex-start; /* Align items to start */
-    }
-  
-    .Dashboard_profile-info h2 {
-      font-size: 16px; /* Further adjust font size */
-    }
-  
-    .Dashboard_create-button {
-      width: 100%; /* Full width button */
-      font-size: 10px; /* Further adjust button font size */
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .Dashboard_sidebar {
-      display: none; /* Hide sidebar on very small screens */
-    }
-  
-    .Dashboard_content {
-      padding: 5px; /* Minimal padding */
-    }
-  
-    .Dashboard_header {
-      padding: 5px; /* Minimal header padding */
-    }
-  
-    .Dashboard_profile-info h2 {
-      font-size: 14px; /* Smallest font size */
-    }
-  
-    .Dashboard_create-button {
-      font-size: 9px; /* Smallest button font size */
-    }
-  }
+  display: flex;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Dashboard_sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #4c4d5e, #1f1f2e);
+  color: white;
+  padding: 20px;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Dashboard_sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Dashboard_sidebar li {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Dashboard_sidebar li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.Dashboard_content {
+  flex-grow: 1;
+  background: #f8f9fd;
+  padding: 30px;
+}
+
+.Dashboard_header {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_profile {
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard_profile-pic {
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  border-radius: 50%;
+  margin-right: 20px;
+  position: relative;
+}
+
+.Dashboard_profile-pic::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  top: -5px;
+  left: -5px;
+}
+
+.Dashboard_profile-info h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.Dashboard_profile-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Dashboard_profile-info a:hover {
+  text-decoration: underline;
+}
+
+.Dashboard_create-button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Dashboard_create-button:hover {
+  transform: scale(1.05);
+}
+
+.Dashboard_upload-list {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_upload-list h3 {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.Dashboard_upload-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Dashboard_upload-list li {
+  background: #eef2f7;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.Dashboard_upload-list li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.Dashboard_upload-list li a:hover {
+  text-decoration: underline;
+}
+
+.Dashboard_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dashboard_modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Dashboard_modal-content h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Dashboard_modal-content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Dashboard_modal-content li {
+  background: #eef2f7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Dashboard_modal-content li:hover {
+  background: #007bff;
+  color: white;
+}
+
+.Dashboard_upload input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.Dashboard_submit-button {
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.Dashboard_submit-button:hover {
+  transform: scale(1.05);
+}
+
+.Dashboard_close-button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Dashboard_close-button:hover {
+  background: #b21f2d;
+}
+
+.Dashboard_preview {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.Dashboard_sidebar li.active {
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+} */
+
+/* General Styling */
+/* General Styles */
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dashboard container */
+.Dashboard_dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.Dashboard_sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.Dashboard_sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Dashboard_sidebar li {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.Dashboard_sidebar li:hover {
+  background-color: #34495e;
+}
+
+.Dashboard_sidebar .active {
+  background-color: #1abc9c;
+}
+
+.Dashboard_content {
+  margin-left: 260px;
+  padding: 20px;
+  width: calc(100% - 260px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Welcome Banner */
+.Dashboard_welcome-banner {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.Dashboard_welcome-banner h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.Dashboard_welcome-banner p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Quick Stats */
+.Dashboard_quick-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.Dashboard_quick-stats div {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 25%;
+}
+
+.Dashboard_quick-stats div h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.Dashboard_quick-stats div p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Recent Activity */
+.Dashboard_recent-activity {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.Dashboard_recent-activity h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Dashboard_recent-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Dashboard_recent-item {
+  width: 30%;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_recent-item img,
+.Dashboard_recent-item video,
+.Dashboard_recent-item audio {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Dashboard_recent-item p {
+  color: #555;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Profile Section */
+.Dashboard_profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Dashboard_profile-info h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.Dashboard_profile-info a {
+  font-size: 1.2rem;
+  color: #1abc9c;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.Dashboard_profile-info a:hover {
+  text-decoration: underline;
+}
+
+/* Create & Edit Buttons */
+.Dashboard_create-section {
+  margin-top: 20px;
+}
+
+.Dashboard_create-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.Dashboard_create-button:hover {
+  background-color: #45a049;
+}
+
+.Dashboard_edit-button {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Dashboard_edit-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Modal */
+.Dashboard_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dashboard_modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_modal-content h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.Dashboard_modal ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.Dashboard_modal ul li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.Dashboard_modal ul li:hover {
+  background-color: #dcdcdc;
+}
+
+.Dashboard_modal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.Dashboard_submit-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Dashboard_submit-button:hover {
+  background-color: #2980b9;
+}
+
+.Dashboard_close-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.Dashboard_close-button:hover {
+  background-color: #c0392b;
+}
+
+.Dashboard_upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dashboard_upload input[type="file"] {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Dashboard_upload input[type="url"] {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.Dashboard_upload button {
+  margin-top: 10px;
+}
+
+/* Upload List */
+.Dashboard_upload-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Dashboard_upload-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Dashboard_upload-list li a {
+  color: #3498db;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.Dashboard_upload-list li img,
+.Dashboard_upload-list li video,
+.Dashboard_upload-list li audio {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Centered Profile Section */
+.Dashboard_profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 50vh;  /* To center the content vertically */
+  margin-top: 30px;
+}
+
+.Dashboard_profile-info h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.Dashboard_profile-info a {
+  font-size: 1.2rem;
+  color: #1abc9c;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.Dashboard_profile-info a:hover {
+  text-decoration: underline;
+}
+
+.Dashboard_create-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.Dashboard_create-button:hover {
+  background-color: #45a049;
+}
+
