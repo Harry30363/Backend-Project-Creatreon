@@ -135,8 +135,8 @@ const Homepage = () => {
       <div className="main-content-5-centre">
         <img src="src/assets/logo.webp" alt="logo.webp" /> <br />
         <br /><h2>Your world to create</h2>
-        <br /><Link to="/login"> <button>Get Started</button></Link><br />
-        <h5><br />Already have an account? <Link to="/login">Log in</Link></h5>
+        <br /><Link to="/register"> <button>Get Started</button></Link><br />
+        <h5><br />Already have an account? <Link to="/loginpage">Log in</Link></h5>
       </div>
       <Footer></Footer>
     </div>

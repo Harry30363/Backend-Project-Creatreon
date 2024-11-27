@@ -9,8 +9,10 @@ import Pricing from './Pricing'; // Import Pricing component
 import Creators from './Creators'; // Import Creators component
 import Loginpage from './Loginpage'; // Import Login component
 import Dashboard from './Dashboard'; // Import Dashboard component
+import RegisterPage from './RegisterPage';
+import Sidebar from './components/Sidebar';
+import MyUploads from './components/MyUploads';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -27,6 +29,7 @@ const App = () => {
                     <Route path="/creators" element={<Creators />} />
                     <Route path="/loginpage" element={<Loginpage setIsLoggedIn={setIsLoggedIn} />} />
                     <Route path="/dashboard" element={isLoggedIn ? <Dashboard /> : <Navigate to="/loginpage" />} />
+                    <Route path="/register" element={<RegisterPage />} />
                 </Routes>
                 
             </div>
